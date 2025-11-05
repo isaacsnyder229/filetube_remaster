@@ -1,3 +1,6 @@
+V1.4 - 11/4/2025
+- Wipe every file and made it look better and run better, also sorry for not being active, I just neededd some me time lol.
+
 V1.3 - 6/5/2025
 - Fixed the github logo not showing again
 - Added a new Movie section for downloading movies, shows, or anime

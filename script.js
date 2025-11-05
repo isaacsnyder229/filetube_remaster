@@ -1,278 +1,269 @@
-// === Video Data ===
+// === Content Data ===
 const videos = [
+  // {
+  //   name: "Scarface (1983) [1080p UHD BluRay x265 HDR DV DD5.1]",
+  //   url: "",
+  //   thumbnail: "https://files.catbox.moe/da39d2.webp",
+  //   description: "In the 1980s, a determined criminal-minded Cuban immigrant becomes the biggest drug smuggler in Miami, and is eventually undone by his own drug addiction.",
+  //   tags: ["Crime", "Drama"]
+  // },
+];
+
+const minecraft = [
   {
-    name: "Mickey 17-1080P",
-    url: "https://mega.nz/file/gFwlGKYY#YAIoGKtNum2Ljj_HZaM5ME7g48kQofZ0PSYhrmXAH5M",
-    thumbnail: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdrVqHLLdDyvoVvB1alcO6ZYJOJPuDd89Hhb_Y8OUBN9sV5TCb",
-    description: "During a human expedition to colonize space, Mickey 17, a so-called expendable employee, is sent to explore an ice planet.",
-    genres: ["Adventure", "Comedy", "Sci-Fi"]
+    name: "Dragon Ball Z",
+    url: "https://mega.nz/file/8U8gwCDD#xO8hyeRHf3AKmDCm-pd0cjZDFPl3ji6p8uiO-IXKMuo",
+    thumbnail: "https://files.catbox.moe/ovl05q.png",
+    description: "Battle as your favorite Dragon Ball Z character in this explosive DLC! Master iconic moves, battle in legendary arenas from the series, and see who dominates the battlefield.",
+    tags: ["Cyclone", "Template", "Anime"]
+  },
+  {
+    name: "Super Cute Fantasy TexturePack",
+    url: "https://mega.nz/file/MNN3mbwS#p4ePQ_9ScQ0EKdJ9Lw10yNdBRYlDRxqfjZqvp6ULOdU",
+    thumbnail: "https://files.catbox.moe/5ksib0.png",
+    description: "This texture pack transforms your Minecraft world into a whimsical fantasy realm filled with vibrant colors and charming details. Perfect for players who love a cute and magical aesthetic.",
+    tags: ["Some Game Studio", "Texture", "Fantasy"]
+  },
+  {
+    name: "Egyptian Mythology Mash-up",
+    url: "https://mega.nz/file/oM0AWYjT#crxuRpPy_ELj934fw1PHReuE_MFuAUT3fpf5juJRBG0",
+    thumbnail: "https://files.catbox.moe/wfgqui.jpg",
+    description: "Will you survive the perils of the Pyramids? Journey through the Valley of the Kings, dodge deadly traps and explore the ancient tombs below! The fourth pack in the Mythology series, this Egyptian-themed Mash-up comes with textures fit for a Pharaoh, legendary mobs, a pantheon of skins and an epic soundtrack!",
+    tags: ["Minecraft", "Mashup", "Mythology"]
+  },
+  {
+    name: "Greek Mythology Mash-up",
+    url: "https://mega.nz/file/9IVylCqb#AiGVBGC3o8UYvE9itlhrFciFdJECJMUv34mR4Z7tr7g",
+    thumbnail: "https://files.catbox.moe/c3r02i.jpg",
+    description: "Build a pantheon fit for the gods, trap the Minotaur in an elaborate maze, or set sail for adventures across the sea. The world is your square oyster!",
+    tags: ["Minecraft", "Mashup", "Mythology"]
+  },
+  {
+    name: "Dragonborn Mash-up",
+    url: "https://mega.nz/file/pN1lhT4Y#i6hLgJolgavi9xkMpRt7Ok8oRXYEMZqBp3gJIkddj6M",
+    thumbnail: "https://files.catbox.moe/3uebxx.jpg",
+    description: "The Dragonborn meets Minecraft in a clash of epic proportions. Build your own worlds in the land of Tamriel and experience adventure with many of its most iconic characters. Fus Ro Dah!",
+    tags: ["Minecraft", "Mashup", "Mythology"]
+  },
+  {
+    name: "Cartoon Texture Pack",
+    url: "https://mega.nz/file/YU03HRgB#fiCGBFuKDJ-toDDSm1IgaSzk1DGWf4tJtj96zlZr22A",
+    thumbnail: "https://files.catbox.moe/nc8nv7.jpg",
+    description: "Googly eyes! Goofy grins! Turn your world into a toon with this pack.",
+    tags: ["Minecraft", "Texture", "Cartoon"]
+  },
+  {
+    name: "Natural Texture Pack",
+    url: "https://mega.nz/file/1E1VkQhb#dTmFs3ptLL3Dsh3FADAMrH_OeH_JeN2m3yNzSjRXCTo",
+    thumbnail: "https://files.catbox.moe/igxytr.jpg",
+    description: "Designed to give your Minecraft worlds a more natural look.",
+    tags: ["Minecraft", "Texture", "Nature"]
+  },
+  {
+    name: "Steampunk Texture Pack",
+    url: "https://mega.nz/file/BE0R1QTA#BIYXpXxheNTCYqI6ku68x0Mo13J31F7tP03w747IDQ4",
+    thumbnail: "https://files.catbox.moe/bub4o4.jpg",
+    description: "Create your own Industrial Revolution with this Victorian inspired Steampunk texture pack!",
+    tags: ["Minecraft", "Texture", "Steampunk"]
+  },
+  {
+    name: "Steven Universe Mash-up",
+    url: "https://mega.nz/file/9ckV3b5S#ZL1sbCx8phKM3-n42mr64RndgQK9lI8VzZihOHVTzhw",
+    thumbnail: "https://files.catbox.moe/y05c2o.jpg",
+    description: "Steven enters the Minecraft universe in this Diamond-worthy Mash-up! Contains Steven Universe themed skins, textures, original music from the show, and all your favorite locations, from Beach City to Homeworld. Believe in Steven!",
+    tags: ["Minecraft", "Mashup", "Cartoon"]
+  },
+  {
+    name: "Vault-Tec Mash-up",
+    url: "https://mega.nz/file/MdsghbTR#Y-mownIaMQhHGVH99ic72ERtmT_D6OQQCKTtFj4Kylo",
+    thumbnail: "https://files.catbox.moe/jytu6n.jpg",
+    description: "Welcome to the wasteland! Crack open the Vault containing 44 unique skins, custom textures, re-skinned mobs, a special post-apocalyptic map, original soundtrack compilation and a Pip-Boy inspired UI.",
+    tags: ["Minecraft", "Mashup", "Post-Apocalyptic"]
+  },
+  {
+    name: "City Texture Pack",
+    url: "https://mega.nz/file/4M91AB5C#tCM6RlOamgpP8tUq4Tka4N7LUJ-Ff5DBDJD8TbKPoV4",
+    thumbnail: "https://files.catbox.moe/klkpsh.jpg",
+    description: "Free your inner architect and shape the world around you.",
+    tags: ["Minecraft", "Texture", "City"]
+  },
+  {
+    name: "Halloween Mash-up",
+    url: "https://mega.nz/file/FF0RGYrC#Pls598UINsfAEjCbq1qX6kqZ3Y3RiN_Iny7aZ7f8heQ",
+    thumbnail: "https://files.catbox.moe/fo7az2.jpg",
+    description: "Happy Halloween! Dress suitably spookily and prepare for the ultimate Minecraft Halloween thrill ride!",
+    tags: ["Minecraft", "Mashup", "Halloween"]
+  },
+  {
+    name: "Pattern Texture Pack",
+    url: "https://mega.nz/file/hIdkzZqZ#qFZnVO_-nQn-quK1_gDBdSHulsR4BrLcWxGZ3lqndM0",
+    thumbnail: "https://files.catbox.moe/gc2n3c.jpg",
+    description: "Decorate your world with this bright and colorful texture pack filled with beautiful patterns and knitted animals!",
+    tags: ["Minecraft", "Texture", "Pattern"]
+  },
+  {
+    name: "LittleBigPlanet™ Mash-up",
+    url: "https://mega.nz/file/NZlAjIyY#cF0ft438YjFvAwBz92--Lx7nOwtPeTIAyC321UYrEPg",
+    thumbnail: "https://files.catbox.moe/2bkzuq.jpg",
+    description: "Mix the crazy, non-stop creativity of LittleBigPlanet™ into the endless fun and freedom of Minecraft with this special mashup pack.\nSackboy®, Sackgirl®, OddSock, Toggle and Swoop will decorate your Minecraft universe with a whole heap of LBP characters, creatures and stuff.\nOnly available for Minecraft on PlayStation®4.",
+    tags: ["Minecraft", "Mashup", "LittleBigPlanet"]
+  },
+  {
+    name: "Toy Story Mash-up",
+    url: "https://mega.nz/file/dcFzgbwJ#K_1glGcHau4w4QFfcJScg9cdfaTBwxqrZhI6Y-SHUO4",
+    thumbnail: "https://files.catbox.moe/npcdmx.jpg",
+    description: "Open up the toy box! Woody, Buzz, Bo Peep and many of your favorite toys come to life in this oversized Mash-up based on all the Toy Story movies! To infinity and beyond!",
+    tags: ["Minecraft", "Mashup", "Toy Story"]
+  },
+  {
+    name: "STAR WARS",
+    url: "https://mega.nz/file/8d9VWRZa#MYbdL8-Yb4OzqBMZ8RwuaSZSO-JzAa33JRAAA4F06mQ",
+    thumbnail: "https://files.catbox.moe/hfik2o.jpg",
+    description: "Explore the galaxy in this epic STAR WARS Mash-up, featuring characters and locations from the original trilogy and The Mandalorian series. This is the way!",
+    tags: ["Minecraft", "Mashup", "Star Wars"]
+  },
+  {
+    name: "Teenage Mutant Ninja Turtles",
+    url: "https://mega.nz/file/hQElFYga#FnaWAJIguJ2gs_BOh1kFb3ZMxPRViD1peJ6OOo0kS_Y",
+    thumbnail: "https://files.catbox.moe/jux1jr.jpg",
+    description: "Cowabunga! The Teenage Mutant Ninja Turtles have found their way into Minecraft in this radical DLC. Play as any of the four Turtles to take down gnarly enemies, save New York from Shredder and eat all the pizza! ",
+    tags: ["Minecraft", "Template", "Teenage Mutant Ninja Turtles"]
+  },
+  {
+    name: "N7 Mash-up",
+    url: "https://mega.nz/file/VFkHARqC#_ESoUJ5udxAZjBzJjHD6jr2dHUq1HP_mev65XiLr_f0",
+    thumbnail: "https://files.catbox.moe/w41ytj.jpg",
+    description: "Shape the fate of your Minecraft galaxy with this amazing Mash-up: includes thirty-six character skins, bespoke game textures, themed menus, a dedicated world filled with iconic locations and original soundtrack compilation to set the mood.",
+    tags: ["Minecraft", "Mashup", "Mass Effect"]
+  },
+  {
+    name: "Azure PVP",
+    url: "https://mega.nz/file/UNEUSZ5S#95WmId3Fs9GUbsOr_duvQ8EdMzdYuqvhcfhrt4zbEbk",
+    thumbnail: "https://files.catbox.moe/44g8u9.jpg",
+    description: "A vibrant and dynamic texture pack designed to enhance your PvP experience in Minecraft. With sharp details and bold colors, Azure PVP brings a fresh look to your battles, making every fight more immersive and exciting.",
+    tags: ["Waypoint Studios", "Texture", "Combat"]
   },
 ];
 
-// === Minecraft Data ===
-const minecraft = [
-    {
-      name: "Fantasy Texture Pack",
-      url: "https://mega.nz/file/DTRUGBJY#sviCEH5YzG3bQoDafiZYMffrOKkWLADLoOKlACjJ6Vw",
-      thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/fddedd74-cdae-4e92-844d-78d32f8202af/FantasyTexturePack_Thumbnail_0.jpg",
-      description: "Transport yourselves to a time where knights were heroes.",
-      tags: ["Minecraft", "Texture"]
-    },
-    {
-      name: "City Texture Pack",
-      url: "https://mega.nz/file/LH5liYBJ#3h7m9q5t_T77zM3tHydkMc7dHKbCrOrxwzBaFHnXx8w",
-      thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/5f4990a2-61c1-4c18-b080-5d5cbb62be4b/CityTexturePack_Thumbnail_0.jpg",
-      description: "Free your inner architect and shape the world around you.",
-      tags: ["Minecraft", "Texture"]
-    },
-    {
-      name: "Plastic Texture Pack",
-      url: "https://mega.nz/file/iPRVRZTR#4NBVZZB779bknKwKKZ8BnSTf4ULbs4OnzXbHirdlqCY",
-      thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/10ac7d0b-5ee5-47e7-b1a9-b0745302b028/PlasticTexturePack_Thumbnail_0.jpg",
-      description: "Make your worlds simple, colorful and vibrant!",
-      tags: ["Minecraft", "Texture"]
-    },
-    {
-      name: "PureBDcraft HD UI",
-      url: "https://mega.nz/file/OKJFXQhC#yHv2iBrXOAi8b9vvwAUs8mcw5CAxQl0jaidziGE9A_4",
-      thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/deeb7ed3-e925-43da-a34b-cb06cd40e616/purebdcraft_Thumbnail_0.jpg",
-      description: "Turn your adventures into a comic book with BDcraft’s detailed HD textures, geeky references, and support for the Spring to Life update—available in 256x to 32x resolutions with an HD UI.",
-      tags: ["BDcraft", "Texture"]
-    },
-    {
-      name: "PureBDcraft",
-      url: "https://mega.nz/file/eeIlwRiB#Ox2zqRJWNaP43z3RCPOlhrdyG5px0gZ5A8Xhcb2OZHc",
-      thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/deeb7ed3-e925-43da-a34b-cb06cd40e616/purebdcraft_Thumbnail_0.jpg",
-      description: "Turn your adventures into a comic book with BDcraft’s detailed HD textures, geeky references, and support for the Spring to Life update—available in 256x to 32x resolutions with an HD UI.",
-      tags: ["BDcraft", "Texture"]
-    },
-    {
-     name: "Better Default 2.1 Textures",
-      url: "https://mega.nz/file/afpBBS6K#TCFT6-Kjz63jiEkevvPyUIW7NYpS6xr1M5JPS3qAZaw",
-      thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/0c6f2c71-c223-4858-9470-fb9b77974798/BetterDefault_Thumbnail_0.jpg",
-      description: "Biggest update yet—refresh your Minecraft experience with 1000+ new textures, full retexturing, and subtle animations, all while staying true to the classic vanilla style!",
-      tags: ["Owls Cubed", "Texture"]
-    },
-    {
-      name: "Steampunk Texture Pack",
-      url: "https://mega.nz/file/LOozmB4B#N0AtCL6LqwESuK_nJxTCIOUsyeNkLr6ll1PY8FxYNDc",
-      thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/f7187803-99b8-4de5-99cf-70fe520ce57e/SteampunkTexturePack_Thumbnail_0.jpg",
-      description: "Create your own Industrial Revolution with this Victorian inspired Steampunk texture pack!",
-      tags: ["Minecraft", "Texture"]
-    },
-    {
-      name: "Festive Mash-up 2016",
-      url: "https://mega.nz/file/bDJmlKKT#uh2OMwpNjlVrksCbC-dhIIGFcWQeBH0EIamhqb6id8s",
-      thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/e97add21-372e-469e-b665-ec77110e7ecc/Festive_Mashup_thumbnail_0.jpg",
-      description: "Wander through a winter wonderland! World, textures, skins and more!",
-      tags: ["Minecraft", "Texture"]
-    },
-    {
-      name: "Festive Mash-up 2016",
-      url: "https://mega.nz/file/bD43kTwJ#SJKv_i1LjQNexEfgcN8Ix894AB0Txjl0z-Z3Cw7X284",
-      thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/e97add21-372e-469e-b665-ec77110e7ecc/Festive_Mashup_thumbnail_0.jpg",
-      description: "Wander through a winter wonderland! World, textures, skins and more!",
-      tags: ["Minecraft", "World"]
-    },
-    {
-      name: "Festive Mash-up 2016",
-      url: "https://mega.nz/file/Xfw0BIaL#9pc_rgBqeFhf031RxTGObxqGHz6xtjUHupzTpliOyYY",
-      thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/e97add21-372e-469e-b665-ec77110e7ecc/Festive_Mashup_thumbnail_0.jpg",
-      description: "Wander through a winter wonderland! World, textures, skins and more!",
-      tags: ["Minecraft", "Skin"]
-    },
-    {
-      name: "Halloween Mash-up",
-      url: "https://mega.nz/file/WHBzHKKL#2HA8eslJC9LX61jlfRJarneV-GaATgLt9vXSmE96WZw",
-      thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/d3ce4a51-7f02-450d-ad90-098c190b84a2/Halloween_Thumbnail_0.jpg",
-      description: "Happy Halloween! Dress suitably spookily and prepare for the ultimate Minecraft Halloween thrill ride!",
-      tags: ["Minecraft", "Texture"]
-    },
-    {
-      name: "Halloween Mash-up",
-      url: "https://mega.nz/file/HHBjlZ6J#B8-0Fjs5rD7qlUk3BfM-bNKCHY1LNC9cfbE6sKiDreQ",
-      thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/d3ce4a51-7f02-450d-ad90-098c190b84a2/Halloween_Thumbnail_0.jpg",
-      description: "Happy Halloween! Dress suitably spookily and prepare for the ultimate Minecraft Halloween thrill ride!",
-      tags: ["Minecraft", "World"]
-    },
-    {
-      name: "Halloween Mash-up",
-      url: "https://mega.nz/file/OfJUnAxA#lgDzuAEu1YTXtQNBFTpAC3fFvXx0-TH6Wv8XcIaCJRY",
-      thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/d3ce4a51-7f02-450d-ad90-098c190b84a2/Halloween_Thumbnail_0.jpg",
-      description: "Happy Halloween! Dress suitably spookily and prepare for the ultimate Minecraft Halloween thrill ride!",
-      tags: ["Minecraft", "Skin"]
-    },
-    {
-      name: "1st Birthday Skin Pack",
-      url: "https://mega.nz/file/mHQ1jYBI#eH2d0U61tdTgRljY36e6SDlwvPlIt8dlcy5GPFyhYiY",
-      thumbnail: "https://xforgeassets001.xboxlive.com/pf-title-b63a0803d3653643-20ca2/b3292e60-9898-4813-869c-40b301b5ac0a/1stBirthday_Thumbnail_0.jpg",
-      description: "Join the Minecraft party now!",
-      tags: ["Minecraft", "Skin"]
-    },
-      {
-      name: "2nd Birthday Skin Pack",
-      url: "https://mega.nz/file/nX4DFDwL#2_rq3kTu8rrGMBA5uom7Wl3bNXDvfywDiXN-E-tA6dU",
-      thumbnail: "https://cdn.mobygames.com/covers/2257914-minecraft-xbox-one-edition-2nd-birthday-skin-pack-xbox-one-front.png",
-      description: "Dress up for the party… and celebrate Minecraft’s 2nd birthday with us!",
-      tags: ["Minecraft", "Skin"]
-    },
-    {
-      name: "3rd Birthday Skin Pack",
-      url: "https://mega.nz/file/vKhnmCzZ#cxYmVcs0koaBr-OiapnnSp-LKboApAduvuShFgtPBqA",
-      thumbnail: "https://cdn.mobygames.com/covers/3222553-minecraft-xbox-one-edition-3rd-birthday-skin-pack-xbox-one-front.png",
-      description: "Celebrate Minecraft’s 3rd Birthday on Xbox with the original Minecraft developers! Find their personal skins in this free celebration pack",
-      tags: ["Minecraft", "Skin"]
-    },
-    {
-      name: "MINECON Earth 2017 Skin Pack",
-      url: "https://mega.nz/file/CGgxVDTS#-TTsQ14uo8OWc4AJ0I8X4xadCGTeBwIV2AmzTLsVwUc",
-      thumbnail: "https://xforgeassets002.xboxlive.com/serviceid-18231953-4b1d-472c-a39e-48b10105b7b7-public/e08abe63-a71c-492d-a166-000d3b5cf121/MINECONEARTH_Thumbnail_0.jpg",
-      description: "Join the party, wherever you are - and get dressed for the occasion with these fancy skins, celebrating everything from cosplay to cake! Available for a short time only, so get 'em fast!",
-      tags: ["Minecraft", "Skin"]
-    },
-    {
-      name: "4th Birthday Skin Pack",
-      url: "https://mega.nz/file/iToRUaTT#fTSy2j97vzccusFfaBoqOJVIa2wNGfc0A-cyJlLS_Z4",
-      thumbnail: "https://cdn.mobygames.com/covers/2258952-minecraft-xbox-one-edition-4th-birthday-skin-pack-xbox-one-front.png",
-      description: "Dress up for the party with this new, Free skin pack and celebrate together the 4th Minecraft birthday!",
-      tags: ["Minecraft", "Skin"]
-    },
-    {
-      name: "Skin Pack 1 - Classic",
-      url: "https://mega.nz/file/mGQX0DTI#4175Sds2e0YaumPxbdMrIU3ncPj1Raf_F7rVDgEMuCU",
-      thumbnail: "https://xforgeassets001.xboxlive.com/pf-title-b63a0803d3653643-ee7b/db90b652-cfe4-40a5-bb5f-9e534d01daa4/SkinPack1Sony_Thumbnail_0.jpg",
-      description: "A special edition of Skin Pack 1 for PlayStation®4, featuring exclusive characters plus favorites from the Classic version.",
-      tags: ["Minecraft", "Skin"]
-    },
-    {
-      name: "Skin Pack 2 - Classic",
-      url: "https://mega.nz/file/3fAhRaDC#De-jm9rugzNWBLPJ6UxwMop0PiQgpwfvdLJ8stgPSpI",
-      thumbnail: "https://xforgeassets002.xboxlive.com/pf-title-b63a0803d3653643-ee7b/65c0d4ee-e8f9-417d-97b1-3d05419fcf08/Minecraft_SkinPack2_Thumbnail_0.jpg",
-      description: "Customise your Minecraft character with this 2nd selection of stunning skins!",
-      tags: ["Minecraft", "Skin"]
-    },
-    {
-      name: "Magic Spells",
-      url: "https://mega.nz/file/XKYlGASY#Eue7W4aWbS29n0si7OuOYCmfL0icmtafNVv4q5lutPI",
-      thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/01bc5296-3c3d-4920-8333-cde9172f887b/Magic_Spells_thumbnail_0.jpg",
-      description: "Level up your Minecraft world with 15 epic spells, custom magic armor, and powers like fireballs, minions, and time control—ready to transform any new or existing world!",
-      tags: ["Cyclone", "Mod"]
-    },
-    {
-      name: "Dinosaurs Add-On 2.1",
-      url: "https://mega.nz/file/nfBCjbpR#jDmPFZIgh2Ma1UidZAtAdW1z4np6oxJ1VhlsjnTLYd4",
-      thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/28a45b12-4893-45ed-bea8-5f5deb20fb0e/dinos_addon_Thumbnail_0.jpg",
-      description: "Travel back in time with the Dinosaurs Add-On—featuring 150+ biome-specific dinos, DNA extraction, morphing, taming, and new gear in the official Bedrock Edition of The Lost World Modpack!",
-      tags: ["Honeyfrost", "Mod"]
-    },
-    {
-      name: "More TNT! Add-On",
-      url: "https://mega.nz/file/zHARBLBD#4kUNSR2C0lnoAKvJvBhbUoWLsdvWwiuGApNYdZHBYNw",
-      thumbnail: "https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/be3c2cc1-8426-4486-914c-13aa4b0f11ef/MoreTNT_Thumbnail_0.jpg",
-      description: "This explosive Add-On is pretty simple… It adds more TNT to any world you want! Craft yourself a wide selection of super overpowered and unique TNT types!",
-      tags: ["Tsunami Studios", "Mod"]
-    },
-    {
-      name: "DWELLERS 2.0 Add-On",
-      url: "https://mega.nz/file/iKZRWR7T#I4Q4_hMk000WGN-R7v9dIFSyRRUZS2GTGCcTRl1p50M",
-      thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/5edd43a0-3004-4523-9aa2-d498069ef8c1/Dwellers_Thumbnail_0.jpg",
-      description: "Enter a world of terror with DWELLERS—face jump scares, blood moons, and horrors like The Knocker, Shadow Dweller, and 6 Mimics, all packed with VFX, sounds, and creepy new items!",
-      tags: ["Panascais", "Mod"]
-    },
-    {
-      name: "Cherry Tree Temple",
-      url: "https://mega.nz/file/OTBxQLJC#N5GpP8X4GidwC5shKmAK58Q6ZislVdBa5jtxDpla6PQ",
-      thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/f25534b8-4dcf-46c8-8354-26610f92d50b/CC_CTT24_Thumbnail_0.jpg",
-      description: "UPDATED! Perched high in a massive cherry tree, this tiered treehouse temple is perfect for hangouts or battles—featuring a vast cherry forest, custom textures, and cherry-themed skins by CrackedCubes!",
-      tags: ["CrackedCubes", "World"]
-    },
-    {
-      name: "Cherry Tree Temple",
-      url: "https://mega.nz/file/HLAyALDR#UKQ7wlOr6GHIWeXVaPTHypwZ04RYkhKrcRtp_LMOzKU",
-      thumbnail: "https://xforgeassets002.xboxlive.com/pf-namespace-b63a0803d3653643/f25534b8-4dcf-46c8-8354-26610f92d50b/CC_CTT24_Thumbnail_0.jpg",
-      description: "UPDATED! Perched high in a massive cherry tree, this tiered treehouse temple is perfect for hangouts or battles—featuring a vast cherry forest, custom textures, and cherry-themed skins by CrackedCubes!",
-      tags: ["CrackedCubes", "Skin"]
-    }
-  ];
+const images = [
+  {
+    name: "Abstract Art Collection",
+    url: "https://example.com/abstract-art.zip",
+    thumbnail: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
+    description: "A collection of vibrant abstract digital artworks.",
+    tags: ["Art", "Abstract", "Digital"]
+  },
+  {
+    name: "Nature Photography Pack",
+    url: "https://example.com/nature-photos.zip",
+    thumbnail: "https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
+    description: "Stunning high-resolution nature photographs.",
+    tags: ["Nature", "Photography", "Landscape"]
+  }
+];
 
-const container = document.getElementById("videoContainer");
+const files = [
+  {
+    name: "Minecraft 1.20.50 64bit",
+    url: "https://mega.nz/file/QIsj1KjC#Z7nJ7O8HIRHVJ0ymobDfDpy2sd6cDX6W83pFJYE63L0",
+    thumbnail: "https://files.catbox.moe/c5vqr6.png",
+    description: "Minecraft is a sandbox adventure game where you build, explore, and survive in randomly generated worlds. It features creative building, crafting, mining, combat, and regular updates that add new blocks, mobs, and gameplay improvements.",
+    tags: ["Minecraft", "Android", "APK"]
+  },
+  {
+    name: "ToolMcFRZ v9.9.2[1.20.80]",
+    url: "https://mega.nz/file/sNtDWZiZ#2maiLkuDFaMnhE_sM_iLOuLa2czZWE7jtxsR5674g_Y",
+    thumbnail: "https://files.catbox.moe/al0aw5.jpg",
+    description: "Cheat client for Minecraft PE with various hacks and mods to enhance gameplay.",
+    tags: ["Minecraft", "Android", "APK", "Tool"]
+  },
+  {
+    name: "Toolbox IT 1.20.81[Fixed]",
+    url: "https://mega.nz/file/EJtFBbAZ#Sx8DxK650KvmQQbSDCVwcq0NBR2n4wUCwjpl34eTlrg",
+    thumbnail: "https://files.catbox.moe/83sm77.jpg",
+    description: "Cheat client for Minecraft PE with various hacks and mods to enhance gameplay.",
+    tags: ["Minecraft", "Android", "APK", "Tool"]
+  },
+  {
+    name: "Toolbox IT 1.20.80",
+    url: "https://mega.nz/file/kI1UjIqI#7XiI7dDNEjNI7N1dWT2jPveR_UIAZHAYRdOARXo1zA8",
+    thumbnail: "https://files.catbox.moe/83sm77.jpg",
+    description: "Cheat client for Minecraft PE with various hacks and mods to enhance gameplay.",
+    tags: ["Minecraft", "Android", "APK", "Tool"]
+  },
+  {
+    name: "Toolbox UP (1.20.51 - 64bit only)",
+    url: "https://mega.nz/file/dZ9AAJIR#T0J39U7FHNWIv2oxtfWFZ7O0HuF8Jv0x4r_P07-0TB4",
+    thumbnail: "https://files.catbox.moe/0kwe5l.png",
+    description: "Cheat client for Minecraft PE with various hacks and mods to enhance gameplay.",
+    tags: ["Minecraft", "Android", "APK", "Tool"]
+  },
+  {
+    name: "Toolbox Zeta (Support 1.20.51)",
+    url: "https://mega.nz/file/JYtG3Kwb#e4GIulTQFQfsecFJEh7A02Ihe4-r_7kChw78ObiFT6o",
+    thumbnail: "https://files.catbox.moe/83sm77.jpg",
+    description: "Cheat client for Minecraft PE with various hacks and mods to enhance gameplay.",
+    tags: ["Minecraft", "Android", "APK", "Tool"]
+  },
+  {
+    name: "Toolbox UP (5.4.55 - 1.20.32)",
+    url: "https://mega.nz/file/8ElVRQ5b#gCyxn9kbueeK2eijBx240t7-vHVza1rUoH4nD1h7LIE",
+    thumbnail: "https://files.catbox.moe/0kwe5l.png",
+    description: "Cheat client for Minecraft PE with various hacks and mods to enhance gameplay.",
+    tags: ["Minecraft", "Android", "APK", "Tool"]
+  },
+  {
+    name: "Minecraft installer V2 (1.2.0 - FINAL)",
+    url: "https://mega.nz/file/tcl1WLAa#jVOOaJ1ft_Myl-6hw7O8c3_AAkV9msKx_nMAAuQr9CQ",
+    thumbnail: "https://files.catbox.moe/c5vqr6.png",
+    description: "A minectraft installer that helps you install Minecraft PE on your Android device easily.",
+    tags: ["Minecraft", "Android", "APK", "Tool"]
+  }
+];
+//Toolbox IT 1.20.81
+// DOM Elements
+const container = document.getElementById("contentContainer");
 const searchInput = document.getElementById("searchInput");
 const movieTab = document.getElementById("movie-tab");
 const minecraftTab = document.getElementById("minecraft-tab");
+const imageTab = document.getElementById("image-tab");
+const fileTab = document.getElementById("file-tab");
 
 let currentTab = "movie";
 
-function renderVideos(filter = "") {
-  container.innerHTML = "";
-  const keyword = filter.toLowerCase().trim();
-  const isGenreSearch = keyword.startsWith("@");
-  const searchTerm = isGenreSearch? keyword.slice(1) : keyword;
-
-  const filtered = videos.filter(video => {
-    if (isGenreSearch) {
-      return video.genres.some(genre => genre.toLowerCase().includes(searchTerm));
-    } else {
-      return (
-        video.name.toLowerCase().includes(searchTerm) ||
-        video.description.toLowerCase().includes(searchTerm)
-      );
-    }
-  });
-
-  if (filtered.length === 0) {
-    container.innerHTML = "<p>No videos found.</p>";
-    return;
-  }
-
-  filtered.forEach(video => {
-    const card = document.createElement("div");
-    card.className = "video-card"; 
-
-    card.innerHTML = `
-      <img loading="lazy" src="${video.thumbnail}" class="video-thumb" alt="Thumbnail for ${video.name}">
-      <div class="video-title"><a href="${video.url}" target="_blank">${video.name}</a></div>
-      <div class="video-desc">${video.description}</div>
-      <div class="genres">
-        ${video.genres.map(genre => `<span class="genre" onclick="renderVideos('@${genre}')">@${genre}</span>`).join("")}
-      </div>
-    `;
-
-    container.appendChild(card);
-  });
-}
-
-function renderMinecraft(filter = "") {
+// Render Functions
+function renderContent(data, filter = "") {
   container.innerHTML = "";
   const keyword = filter.toLowerCase().trim();
   const isTagSearch = keyword.startsWith("@");
-  const searchTerm = isTagSearch? keyword.slice(1) : keyword;
+  const searchTerm = isTagSearch ? keyword.slice(1) : keyword;
 
-  const filtered = minecraft.filter(pack => {
+  const filtered = data.filter(item => {
     if (isTagSearch) {
-      return pack.tags.some(tag => tag.toLowerCase().includes(searchTerm));
+      return item.tags.some(tag => tag.toLowerCase().includes(searchTerm));
     } else {
       return (
-        pack.name.toLowerCase().includes(searchTerm) ||
-        pack.description.toLowerCase().includes(searchTerm)
+        item.name.toLowerCase().includes(searchTerm) ||
+        item.description.toLowerCase().includes(searchTerm)
       );
     }
   });
 
   if (filtered.length === 0) {
-    container.innerHTML = "<p>No Minecraft packs found.</p>";
+    container.innerHTML = '<div class="empty-state">No content found. Try a different search term.</div>';
     return;
   }
 
-  filtered.forEach(pack => {
+  filtered.forEach(item => {
     const card = document.createElement("div");
-    card.className = "video-card";
+    card.className = "content-card";
 
     card.innerHTML = `
-      <img loading="lazy" src="${pack.thumbnail}" class="video-thumb" alt="Thumbnail for ${pack.name}">
-      <div class="video-title"><a href="${pack.url}" target="_blank">${pack.name}</a></div>
-      <div class="video-desc">${pack.description}</div>
-      <div class="genres">
-        ${pack.tags.map(tag => `<span class="genre" onclick="renderMinecraft('@${tag}')">@${tag}</span>`).join("")}
+      <img loading="lazy" src="${item.thumbnail}" class="content-thumb" alt="Thumbnail for ${item.name}">
+      <div class="content-title"><a href="${item.url}" target="_blank">${item.name}</a></div>
+      <div class="content-desc">${item.description}</div>
+      <div class="tags">
+        ${item.tags.map(tag => `<span class="tag" onclick="searchByTag('@${tag}')">${tag}</span>`).join("")}
       </div>
     `;
 
@@ -280,17 +271,69 @@ function renderMinecraft(filter = "") {
   });
 }
 
+function renderMovies(filter = "") {
+  renderContent(videos, filter);
+}
+
+function renderMinecraft(filter = "") {
+  renderContent(minecraft, filter);
+}
+
+function renderImages(filter = "") {
+  renderContent(images, filter);
+}
+
+function renderFiles(filter = "") {
+  renderContent(files, filter);
+}
+
+// Tab Management
 function switchTab(tab) {
-  if (tab === "movie") {
-    movieTab.classList.add("active");
-    minecraftTab.classList.remove("active");
-    currentTab = "movie";
-    renderVideos(searchInput.value);
-  } else if (tab === "minecraft") {
-    movieTab.classList.remove("active");
-    minecraftTab.classList.add("active");
-    currentTab = "minecraft";
-    renderMinecraft(searchInput.value);
+  // Update tab buttons
+  [movieTab, minecraftTab, imageTab, fileTab].forEach(t => t.classList.remove("active"));
+  
+  // Set active tab and render content
+  currentTab = tab;
+  document.getElementById(`${tab}-tab`).classList.add("active");
+  
+  // Render appropriate content
+  const searchValue = searchInput.value;
+  switch(tab) {
+    case "movie":
+      renderMovies(searchValue);
+      break;
+    case "minecraft":
+      renderMinecraft(searchValue);
+      break;
+    case "image":
+      renderImages(searchValue);
+      break;
+    case "file":
+      renderFiles(searchValue);
+      break;
+  }
+}
+
+// Search Functions
+function searchByTag(tag) {
+  searchInput.value = tag;
+  handleSearch();
+}
+
+function handleSearch() {
+  switch(currentTab) {
+    case "movie":
+      renderMovies(searchInput.value);
+      break;
+    case "minecraft":
+      renderMinecraft(searchInput.value);
+      break;
+    case "image":
+      renderImages(searchInput.value);
+      break;
+    case "file":
+      renderFiles(searchInput.value);
+      break;
   }
 }
 
@@ -303,12 +346,8 @@ function debounce(func, delay) {
   };
 }
 
-searchInput.addEventListener("input", debounce(() => {
-  if (currentTab === "movie") {
-    renderVideos(searchInput.value);
-  } else if (currentTab === "minecraft") {
-    renderMinecraft(searchInput.value);
-  }
-}, 200));
+// Event Listeners
+searchInput.addEventListener("input", debounce(handleSearch, 200));
 
-renderVideos();
+// Initialize
+renderMovies();
