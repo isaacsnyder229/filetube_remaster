@@ -1,17 +1,32 @@
-# filetube.github.io
+# FileTube Remaster
 
-This is mostly personal use right now becausse the files are password protected but if you need the password just join the [disccord server](https://discord.gg/H8XDstGhpR)
+**FileTube Remaster** is currently for personal use, as most files are password-protected.  
+If you need access, join the [Discord server](https://discord.gg/H8XDstGhpR) to request the password.
 
-The first tag represent the creator of the pack
+---
 
-Here are the tags
-- Texture
-- Skin
-- World
-- Mod
+## 🏷️ Tag System
 
-There is no mash-up tag because it's split into the individual stuff such as the Festive Mash-up 2016, it's split into 3 files, the skins, the world template, and the texture pack. But you can only search for Mash-up's because they will all have Mash-up in the name because all I do is just copy and paste the name from the marketplace.
+The **first tag** always represents the **creator** of the pack.  
+Available tags:
 
----------
+- **Texture**
+- **Skin**
+- **World**
+- **Movies**
+- **APKs**
 
-I have added a new tab for movies, shows, or anime. If you want any movie, shows, or anime, on the website just suggest whatever and I will try my best to get the best quailty of the movie/show/anime.
+There isn’t a dedicated **Mash-up** tag since those are split into their individual components.  
+For example, the *Festive Mash-up 2016* is divided into three separate files: **Skins**, **World Template**, and **Texture Pack**.  
+You can still search for “Mash-up” since all related files include that term in their names (copied directly from the Marketplace).
+
+---
+
+## 🎬 Movies, Shows & Anime
+
+A new tab has been added for **movies**, **shows**, and **anime**.  
+If you’d like something added, feel free to suggest it — I’ll try to upload the highest-quality version available.
+
+---
+
+

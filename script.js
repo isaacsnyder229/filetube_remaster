@@ -14,6 +14,13 @@ const videos = [
     description: "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
     tags: ["Action", "Adventure", "Sci-Fi"]
   },
+  {
+    name: "UNHINGED 3: THE BOYS FINALLY SNAPPED",
+    url: "https://mega.nz/file/B6wSADAY#796WFLRwmcF9Aujx-JMtFi3VM5WhMBK87vHBXy031dA",
+    thumbnail: "https://files.catbox.moe/xlpi6r.jpg",
+    description: "",
+    tags: ["The Boys", "Members only", "Youtube"]
+  }
 ];
 
 const minecraft = [
@@ -150,22 +157,114 @@ const minecraft = [
     description: "A vibrant and dynamic texture pack designed to enhance your PvP experience in Minecraft. With sharp details and bold colors, Azure PVP brings a fresh look to your battles, making every fight more immersive and exciting.",
     tags: ["Waypoint Studios", "Texture", "Combat"]
   },
-];
-
-const images = [
   {
-    name: "Abstract Art Collection",
-    url: "https://example.com/abstract-art.zip",
-    thumbnail: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
-    description: "A collection of vibrant abstract digital artworks.",
-    tags: ["Art", "Abstract", "Digital"]
+    name: "1st Birthday Skin Pack",
+    url: "https://mega.nz/file/oB8BEJJJ#rq2AUJ0ZXlgsp2_uBZGi_4ufimjAa4impwcTwE2YnUs",
+    thumbnail: "https://files.catbox.moe/r0na4z.png",
+    description: "Join the Minecraft party now!",
+    tags: ["Minecraft", "Skin", "Birthday"]
   },
   {
-    name: "Nature Photography Pack",
-    url: "https://example.com/nature-photos.zip",
-    thumbnail: "https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
-    description: "Stunning high-resolution nature photographs.",
-    tags: ["Nature", "Photography", "Landscape"]
+    name: "2nd Birthday Skin Pack - 2015",
+    url: "https://mega.nz/file/lZVmHJSC#pgvjLQfSJaJTNBXpi3KI7fE0qSLWmtLodHv-JwNBd1s",
+    thumbnail: "https://files.catbox.moe/vz8ocj.png",
+    description: "Minecraft is growing up, time to celebrate together our 2nd Birthday!",
+    tags: ["Minecraft", "Skin", "Birthday"]
+  },
+  {
+    name: "2nd Birthday Skin Pack",
+    url: "https://mega.nz/file/QEcQnJZL#ZxeU3aeG128YZriWdUhCkLEgeWm30BBXO89oyAiLARIs",
+    thumbnail: "https://files.catbox.moe/i7va5s.png",
+    description: "Minecraft is growing up, time to celebrate together our 2nd Birthday!",
+    tags: ["Minecraft", "Skin", "Birthday"]
+  },
+  {
+    name: "3rd Birthday Skin Pack",
+    url: "https://mega.nz/file/0clUHY7Q#7nS93MXu9AwE029aBv3s5KJxoYSbpxENhfXRlrNmIR4",
+    thumbnail: "https://files.catbox.moe/id8wws.png",
+    description: "Celebrate Minecraft's 3rd Birthday on Xbox with the original Minecraft developers! Find their personal skins in this free celebration pack.",
+    tags: ["Minecraft", "Skin", "Birthday"]
+  },
+  {
+    name: "4th Birthday Skin Pack",
+    url: "https://mega.nz/file/8cVF3SyZ#EPS1pyuKMqAEToPDQ6cAAW4ihvYrw3SR0BH47k_uCkA",
+    thumbnail: "https://files.catbox.moe/ggybl1.png",
+    description: "Dress up for the party with this new, free skin pack and celebrate together the 4th Minecraft birthday!",
+    tags: ["Minecraft", "Skin", "Birthday"]
+  },
+  {
+    name: "5th Birthday Skin Pack",
+    url: "https://mega.nz/file/cAk1gZaA#f2j8Q75we2VG6_e61CvqQgRdtCNaPZNIdFP-Ipy3YWY",
+    thumbnail: "https://files.catbox.moe/ev0th8.png",
+    description: "Join the celebrations for the 5th birthday of Minecraft with this new, free skin pack featuring the one and only 4J Studios development team! Party on!",
+    tags: ["Minecraft", "Skin", "Birthday"]
+  },
+  {
+    name: "Better Bit PvP",
+    url: "https://mega.nz/file/cU1TiDbQ#p3LsiN6MlOgbp_RrLFC-h7tk-dLSt_Kf_zTPbnkdEBU",
+    thumbnail: "https://files.catbox.moe/dbjijf.jpg",
+    description: "Better Bit PvP modernizes and simplifies the graphics of your experience with an emphasis on PvP! Featuring PvP friendly swords, bit style textures for that retro feel and color impact. Clean and easy to read UI!",
+    tags: ["Sapphire Studios", "Texture", "Combat"]
+  },
+  {
+    name: "Luminous Dreams v1.0",
+    url: "https://mega.nz/file/VM9DjKQJ#rL4-rJi7meKeunNC9QJ6QgoP8gIvBJokKrePaxjoPb0",
+    thumbnail: "https://files.catbox.moe/8o0j55.jpg",
+    description: "Experience a brand new world with Luminous Dreams, a Vibrant Visuals pack that will transform your entire world into something beautiful!",
+    tags: ["Poggy", "Texture", "Fantasy"]
+  },
+  {
+    name: "SCP: Uncaged Add-On",
+    url: "https://mega.nz/file/VN1ngCjA#fdyIzcWU3q_GfAWmk-kYh3OENVpo9ba0k7dDUBz0bEc",
+    thumbnail: "https://files.catbox.moe/ledord.jpg",
+    description: "The SCPs have become UNCAGED across your world, and it is up to you to contain them!",
+    tags: ["Cloud Corp", "Add-On", "Horror"]
+  },
+  {
+    name: "Spellswords Add-On",
+    url: "https://mega.nz/file/BQMGXCoJ#G8QR91hzlfZnd2irG88ymmZQzUu13uXr-wvDrKNbjkw",
+    thumbnail: "https://files.catbox.moe/g24o5r.jpg",
+    description: "Ever wondered what happens when you merge spells with swords? Find out in the \"Spellswords\" Add-On. a groundbreaking weapon Add-On with a magical twist!",
+    tags: ["King Cube", "Add-On", "Fantasy"]
+  },
+  {
+    name: "Weapons And Powers Add-on",
+    url: "https://mega.nz/file/ZYMmmZbA#RBrUE73xAag0jO_ietYd9WaDYMtledD-CF23Ozx39BQ",
+    thumbnail: "https://files.catbox.moe/lyu3vw.jpg",
+    description: "Unleash unique powers with every weapon! Discover magical, explosive, and elemental abilities in this add-on.",
+    tags: ["Ninja Block", "Add-On", "Fantasy"]
+  },
+  {
+    name: "Police Roleplay",
+    url: "https://mega.nz/file/MAMRlTaB#pNpBPid5qpVj6mnI63wYBOakOgkKv7Ksk3lb3zdhpa0",
+    thumbnail: "https://files.catbox.moe/kqtdn0.jpg",
+    description: "Become a police officer and protect the city! This is the ultimate police roleplay world with drivable police cars, giant city, uniforms, and more! Roleplay cops and robbers!",
+    tags: ["ChewMingo", "Template", "Police"]
+  },
+  {
+    name: "Super Heavys Add-On",
+    url: "https://mega.nz/file/VRtHnLxR#aoTm2FcWWWhrve6MVR8pf1ieieBw55RVROM6XYbGlzQ",
+    thumbnail: "https://files.catbox.moe/441her.jpg",
+    description: "Whether you're building or tearing down, planting or harvesting, Super Heavys machines can help! Add vehicles to your OWN world to work and do whatever you want... of course, wearing PPE!",
+    tags: ["Street Studios", "Add-On", "Vehicles"]
+  },
+];
+
+
+const music = [
+  {
+    name: "Skin",
+    url: "https://files.catbox.moe/1am82z.mp3",
+    thumbnail: "https://files.catbox.moe/3lj55v.jpg",
+    description: "",
+    tags: ["XXXTENTACION", "MP3"]
+  },
+  {
+    name: "Skin",
+    url: "https://files.catbox.moe/xoivun.flac",
+    thumbnail: "https://files.catbox.moe/3lj55v.jpg",
+    description: "",
+    tags: ["XXXTENTACION", "FLAC"]
   }
 ];
 
@@ -233,10 +332,12 @@ const container = document.getElementById("contentContainer");
 const searchInput = document.getElementById("searchInput");
 const movieTab = document.getElementById("movie-tab");
 const minecraftTab = document.getElementById("minecraft-tab");
-const imageTab = document.getElementById("image-tab");
+const musicTab = document.getElementById("music-tab");
 const fileTab = document.getElementById("file-tab");
 
 let currentTab = "movie";
+
+
 
 // Render Functions
 function renderContent(data, filter = "") {
@@ -286,8 +387,8 @@ function renderMinecraft(filter = "") {
   renderContent(minecraft, filter);
 }
 
-function renderImages(filter = "") {
-  renderContent(images, filter);
+function renderMusic(filter = "") {
+  renderContent(music, filter);
 }
 
 function renderFiles(filter = "") {
@@ -297,7 +398,7 @@ function renderFiles(filter = "") {
 // Tab Management
 function switchTab(tab) {
   // Update tab buttons
-  [movieTab, minecraftTab, imageTab, fileTab].forEach(t => t.classList.remove("active"));
+  [movieTab, minecraftTab, musicTab, fileTab].forEach(t => t.classList.remove("active"));
   
   // Set active tab and render content
   currentTab = tab;
@@ -312,8 +413,8 @@ function switchTab(tab) {
     case "minecraft":
       renderMinecraft(searchValue);
       break;
-    case "image":
-      renderImages(searchValue);
+    case "music":
+      renderMusic(searchValue);
       break;
     case "file":
       renderFiles(searchValue);
@@ -335,8 +436,8 @@ function handleSearch() {
     case "minecraft":
       renderMinecraft(searchInput.value);
       break;
-    case "image":
-      renderImages(searchInput.value);
+    case "music":
+      renderMusic(searchInput.value);
       break;
     case "file":
       renderFiles(searchInput.value);

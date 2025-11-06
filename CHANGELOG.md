@@ -1,3 +1,7 @@
+V1.4.2 - 11/5/2025
+- Added new music section
+- Added more minecraft packs
+
 V1.4.1 - 11/4/2025
 - Added Scarface (1983)
 - Added Iron Man (2008)
