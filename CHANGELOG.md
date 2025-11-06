@@ -1,6 +1,7 @@
-V1.4.2 - 11/5/2025
+V1.4.2 - 11/6/2025
 - Added new music section
 - Added more minecraft packs
+- Added youtube videos that are members only or like stuff I think is cool or sum
 
 V1.4.1 - 11/4/2025
 - Added Scarface (1983)
